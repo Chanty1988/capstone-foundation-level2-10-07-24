@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <title>Casino Royal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <style>
+      h1 {
+        font-size: 6vw;
+        text-align: center;
+      }
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+      h2 {
+        font-size: 3vw;
+        color: green;
+      }
+    </style>
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
+    <img
+      title="Casino Royal"
+      alt="casino cards and coins"
+      width="100%"
+      height="225px"
+      src="https://cdn.glitch.global/7e5c3b00-6b2d-4de6-95a2-a09cdac7c241/46cc3286-de01-485e-85b1-60e80762fc68.image.png?v=1722245139662"
+    />
 
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
+    <header>
+      <nav class="nav nav-pills">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="games.html">Games And Events</a>
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+        <a class="nav-link" href="about.html"> About Us</a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1><i>Casino Royal</i></h1>
+      <hr />
+      <h2 id="interior">Interior</h2>
+      <p>
+        Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh
+        semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch
+        raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard
+        pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee
+        prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
+      </p>
+      <hr />
+      <h2 id="games">Games</h2>
+      <p>
+        Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin.
+        Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping
+        carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé
+        pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops
+        tootsie roll marshmallow halvah carrot cake.
+      </p>
+      <hr />
+      <h2 id="events">Events</h2>
+      <p>
+        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
+        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
+        vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
+        Hi mindless mortuis soulless creaturas, imo evil stalking monstra
+        adventus resi dentevil vultus comedat cerebella viventium.
+      </p>
+      sitemap:
+      <nav>
+        <a href="#interior">Interior</a><br />
+        <a href="#games">Games</a><br />
+        <a href="#events">Events</a>
+      </nav>
+    </main>
+    <hr />
+    <footer>
+      <div class="alert alert-warning">This Month's Top 3 Employees</div>
+
+      <div class="spinner-grow text-info"></div>
+
+      <script>
+        nameList = ["Lisa/", "Monica/", "April"];
+        document.write(nameList[0]);
+        document.write(nameList[1]);
+        document.write(nameList[2]);
+      </script>
     </footer>
   </body>
 </html>
